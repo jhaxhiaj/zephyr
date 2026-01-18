@@ -342,8 +342,7 @@ static int ili9xxx_set_orientation(const struct device *dev,
 		} else if (orientation == DISPLAY_ORIENTATION_ROTATED_90) {
 			tx_data |= ILI9XXX_MADCTL_MV | ILI9XXX_MADCTL_MY;
 		} else if (orientation == DISPLAY_ORIENTATION_ROTATED_180) {
-			tx_data |= ILI9XXX_MADCTL_MY | ILI9XXX_MADCTL_MX |
-				   ILI9XXX_MADCTL_ML;
+			tx_data |= ILI9XXX_MADCTL_MY  | ILI9XXX_MADCTL_ML;
 		} else if (orientation == DISPLAY_ORIENTATION_ROTATED_270) {
 			tx_data |= ILI9XXX_MADCTL_MV | ILI9XXX_MADCTL_MX;
 		}
